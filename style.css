@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #810f46, #6b0e0e);
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #ffd700;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+/* Main container styles */
+.container {
+    margin-top: 230px; /* Prevent overlap with the fixed header */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+/* Form styling */
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bmi-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #ffd700;
+    font-weight: bold;
+    text-align: left;
+}
+
+.bmi-form input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Change placeholder color to white */
+.bmi-form input::placeholder {
+    color: white; /* Placeholder color set to white */
+}
+
+.bmi-form input:focus {
+    border-color: #ffd700;
+}
+
+/* Height inputs styling */
+.height-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.height-inputs input {
+    width: 48%;
+}
+
+/* Button styles */
+.bmi-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #ffd700, #ff8c00);
+    color: #290606;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.bmi-form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff8c00, #ffd700);
+}
+
+.reset-btn {
+    background: linear-gradient(135deg, #ff5a5f, #d31f1f);
+    color: #fff;
+}
+
+/* Result styles */
+.result {
+    font-size: 1.4rem;
+    color: #ffd700;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffd700;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: #ffd700;         /* Icon color */
+    margin: 0 10px;        /* Space between icons */
+    transition: color 0.2s; /* Smooth transition on hover */
+    text-decoration: none;  /* Remove underline if present */
+}
+
+
+.social-icons a:hover {
+    color: #ff8c00;
+}
+
